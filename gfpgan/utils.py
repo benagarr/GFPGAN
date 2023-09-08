@@ -148,7 +148,7 @@ class GFPGANer():
                 # save without compressing
                 model_from_torch.save('/content/result.mlpackage')
 
-                return
+                die()
                 
                 # convert to image
                 restored_face = tensor2img(output.squeeze(0), rgb2bgr=True, min_max=(-1, 1))
