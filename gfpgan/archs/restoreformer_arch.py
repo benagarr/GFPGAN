@@ -654,5 +654,7 @@ class RestoreFormer(nn.Module):
     def forward(self, input, **kwargs):
         quant, diff, info, hs = self.encode(input)
         dec = self.decode(quant, hs)
+        
+        dec = torch.mul(dec, 255)
 
-        return dec, None
+        return dec
