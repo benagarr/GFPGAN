@@ -132,6 +132,22 @@ class GFPGANer():
                 print("Tracing")
                 traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
                 print("Traced")
+                
+                scale = 1 / 255.0
+                
+                print("Start conversion!")
+                model_from_torch = ct.convert(traced_model,
+                              convert_to="mlprogram",
+                              compute_precision=ct.precision.FLOAT16,
+                              inputs=[ct.ImageType(name="input",
+                                                    shape=upsampler.img.shape,
+                                                    color_layout=ct.colorlayout.RGB,
+                                                    scale=scale)],
+                              outputs=[ct.ImageType(name="pred")])
+
+                # save without compressing
+                model_from_torch.save('/content/result.mlpackage')
+
                 return
                 
                 # convert to image
