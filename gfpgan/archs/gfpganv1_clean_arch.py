@@ -274,7 +274,7 @@ class GFPGANv1Clean(nn.Module):
                     nn.Conv2d(out_channels, out_channels, 3, 1, 1), nn.LeakyReLU(0.2, True),
                     nn.Conv2d(out_channels, sft_out_channels, 3, 1, 1)))
 
-    def forward(self, x, return_latents=False, return_rgb=True, randomize_noise=True, **kwargs):
+    def forward(self, x, return_latents=False, return_rgb=False, randomize_noise=True, **kwargs):
         """Forward function for GFPGANv1Clean.
 
         Args:
@@ -321,4 +321,4 @@ class GFPGANv1Clean(nn.Module):
                                          input_is_latent=self.input_is_latent,
                                          randomize_noise=randomize_noise)
 
-        return image, out_rgbs
+        return image
