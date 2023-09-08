@@ -10,6 +10,9 @@ from gfpgan.archs.gfpgan_bilinear_arch import GFPGANBilinear
 from gfpgan.archs.gfpganv1_arch import GFPGANv1
 from gfpgan.archs.gfpganv1_clean_arch import GFPGANv1Clean
 
+import coremltools as ct
+
+
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -123,6 +126,14 @@ class GFPGANer():
 
             try:
                 output = self.gfpgan(cropped_face_t, return_rgb=False, weight=weight)[0]
+                
+                check_trace = True
+                
+                print("Tracing")
+                traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
+                print("Traced")
+                return
+                
                 # convert to image
                 restored_face = tensor2img(output.squeeze(0), rgb2bgr=True, min_max=(-1, 1))
             except RuntimeError as error:
