@@ -143,7 +143,14 @@ class GFPGANer():
                                                     shape=cropped_face_t.shape,
                                                     color_layout=ct.colorlayout.RGB,
                                                     scale=scale)],
-                              outputs=[ct.ImageType(name="pred")])
+                              outputs=[ct.ImageType(name="pred1"),
+                                       ct.ImageType(name="pred2"),
+                                       ct.ImageType(name="pred3"),
+                                       ct.ImageType(name="pred4"),
+                                       ct.ImageType(name="pred5"),
+                                       ct.ImageType(name="pred6"),
+                                       ct.ImageType(name="pred7"),
+                                       ct.ImageType(name="pred8")])
 
                 # save without compressing
                 model_from_torch.save('/content/result.mlpackage')
