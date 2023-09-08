@@ -1,0 +1,331 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		199DACD02AA63DCE008E480A /* MANIFEST.in */ = {isa = PBXFileReference; lastKnownFileType = text; name = MANIFEST.in; path = ../../MANIFEST.in; sourceTree = "<group>"; };
+		199DACD12AA63DCE008E480A /* setup.cfg */ = {isa = PBXFileReference; lastKnownFileType = text; name = setup.cfg; path = ../../setup.cfg; sourceTree = "<group>"; };
+		199DACD42AA63DCE008E480A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		199DACD52AA63DCE008E480A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; name = LICENSE; path = ../../LICENSE; sourceTree = "<group>"; };
+		199DACD62AA63DCE008E480A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
+		199DACD72AA63DCE008E480A /* inference_gfpgan.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = inference_gfpgan.py; path = ../../inference_gfpgan.py; sourceTree = "<group>"; };
+		199DACD82AA63DCE008E480A /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = CODE_OF_CONDUCT.md; path = ../../CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		199DACD92AA63DCE008E480A /* cog_predict.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = cog_predict.py; path = ../../cog_predict.py; sourceTree = "<group>"; };
+		199DACDA2AA63DCE008E480A /* cog.yaml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; name = cog.yaml; path = ../../cog.yaml; sourceTree = "<group>"; };
+		199DACDD2AA63DCE008E480A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		199DACDE2AA63DCE008E480A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		199DACE02AA63DCE008E480A /* gfpgan_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gfpgan_model.py; sourceTree = "<group>"; };
+		199DACE12AA63DCE008E480A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		199DACE22AA63DCE008E480A /* utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = utils.py; sourceTree = "<group>"; };
+		199DACE32AA63DCE008E480A /* train.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = train.py; sourceTree = "<group>"; };
+		199DACE52AA63DCE008E480A /* stylegan2_bilinear_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = stylegan2_bilinear_arch.py; sourceTree = "<group>"; };
+		199DACE62AA63DCE008E480A /* arcface_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = arcface_arch.py; sourceTree = "<group>"; };
+		199DACE72AA63DCE008E480A /* stylegan2_clean_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = stylegan2_clean_arch.py; sourceTree = "<group>"; };
+		199DACE82AA63DCE008E480A /* gfpganv1_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gfpganv1_arch.py; sourceTree = "<group>"; };
+		199DACE92AA63DCE008E480A /* restoreformer_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = restoreformer_arch.py; sourceTree = "<group>"; };
+		199DACEA2AA63DCE008E480A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		199DACEB2AA63DCE008E480A /* gfpganv1_clean_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gfpganv1_clean_arch.py; sourceTree = "<group>"; };
+		199DACEC2AA63DCE008E480A /* gfpgan_bilinear_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = gfpgan_bilinear_arch.py; sourceTree = "<group>"; };
+		199DACEE2AA63DCE008E480A /* ffhq_degradation_dataset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ffhq_degradation_dataset.py; sourceTree = "<group>"; };
+		199DACEF2AA63DCE008E480A /* __init__.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		199DACF12AA63DCE008E480A /* gfpgan_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gfpgan_logo.png; sourceTree = "<group>"; };
+		199DACF22AA63DCE008E480A /* PaperModel.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = PaperModel.md; path = ../../PaperModel.md; sourceTree = "<group>"; };
+		199DACF52AA63DCE008E480A /* Blake_Lively.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Blake_Lively.jpg; sourceTree = "<group>"; };
+		199DACF62AA63DCE008E480A /* 10045.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 10045.png; sourceTree = "<group>"; };
+		199DACF72AA63DCE008E480A /* 00.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 00.jpg; sourceTree = "<group>"; };
+		199DACF92AA63DCE008E480A /* Justin_Timberlake_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Justin_Timberlake_crop.png; sourceTree = "<group>"; };
+		199DACFA2AA63DCE008E480A /* Paris_Hilton_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paris_Hilton_crop.png; sourceTree = "<group>"; };
+		199DACFB2AA63DCE008E480A /* Julia_Roberts_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Julia_Roberts_crop.png; sourceTree = "<group>"; };
+		199DACFC2AA63DCE008E480A /* Adele_crop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Adele_crop.png; sourceTree = "<group>"; };
+		199DACFD2AA63DCE008E480A /* requirements.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = requirements.txt; path = ../../requirements.txt; sourceTree = "<group>"; };
+		199DACFF2AA63DCE008E480A /* parse_landmark.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = parse_landmark.py; sourceTree = "<group>"; };
+		199DAD002AA63DCE008E480A /* convert_gfpganv_to_clean.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = convert_gfpganv_to_clean.py; sourceTree = "<group>"; };
+		199DAD012AA63DCE008E480A /* FAQ.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = FAQ.md; path = ../../FAQ.md; sourceTree = "<group>"; };
+		199DAD022AA63DCE008E480A /* Comparisons.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = Comparisons.md; path = ../../Comparisons.md; sourceTree = "<group>"; };
+		199DAD042AA63DCE008E480A /* train_gfpgan_v1.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_gfpgan_v1.yml; sourceTree = "<group>"; };
+		199DAD052AA63DCE008E480A /* train_gfpgan_v1_simple.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = train_gfpgan_v1_simple.yml; sourceTree = "<group>"; };
+		199DAD062AA63DCE008E480A /* README_CN.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README_CN.md; path = ../../README_CN.md; sourceTree = "<group>"; };
+		199DAD072AA63DCE008E480A /* setup.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = setup.py; path = ../../setup.py; sourceTree = "<group>"; };
+		199DAD092AA63DCE008E480A /* test_utils.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_utils.py; sourceTree = "<group>"; };
+		199DAD0A2AA63DCE008E480A /* test_stylegan2_clean_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_stylegan2_clean_arch.py; sourceTree = "<group>"; };
+		199DAD0B2AA63DCE008E480A /* test_gfpgan_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_gfpgan_arch.py; sourceTree = "<group>"; };
+		199DAD0C2AA63DCE008E480A /* test_gfpgan_model.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_gfpgan_model.py; sourceTree = "<group>"; };
+		199DAD0D2AA63DCE008E480A /* test_ffhq_degradation_dataset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_ffhq_degradation_dataset.py; sourceTree = "<group>"; };
+		199DAD0F2AA63DCE008E480A /* test_gfpgan_model.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_gfpgan_model.yml; sourceTree = "<group>"; };
+		199DAD112AA63DCE008E480A /* 00000000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 00000000.png; sourceTree = "<group>"; };
+		199DAD122AA63DCE008E480A /* test_eye_mouth_landmarks.pth */ = {isa = PBXFileReference; lastKnownFileType = file; path = test_eye_mouth_landmarks.pth; sourceTree = "<group>"; };
+		199DAD142AA63DCE008E480A /* lock.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = lock.mdb; sourceTree = "<group>"; };
+		199DAD152AA63DCE008E480A /* data.mdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.mdb; sourceTree = "<group>"; };
+		199DAD162AA63DCE008E480A /* meta_info.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = meta_info.txt; sourceTree = "<group>"; };
+		199DAD172AA63DCE008E480A /* test_ffhq_degradation_dataset.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = test_ffhq_degradation_dataset.yml; sourceTree = "<group>"; };
+		199DAD182AA63DCE008E480A /* test_arcface_arch.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = test_arcface_arch.py; sourceTree = "<group>"; };
+		199DAD192AA63DCE008E480A /* VERSION */ = {isa = PBXFileReference; lastKnownFileType = text; name = VERSION; path = ../../VERSION; sourceTree = "<group>"; };
+		199DAD1A2AA640A0008E480A /* convert.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; name = convert.py; path = ../../convert.py; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		199DACC92AA63DBA008E480A = {
+			isa = PBXGroup;
+			children = (
+				199DAD1A2AA640A0008E480A /* convert.py */,
+				199DACF02AA63DCE008E480A /* assets */,
+				199DACD82AA63DCE008E480A /* CODE_OF_CONDUCT.md */,
+				199DACD92AA63DCE008E480A /* cog_predict.py */,
+				199DACDA2AA63DCE008E480A /* cog.yaml */,
+				199DAD022AA63DCE008E480A /* Comparisons.md */,
+				199DACD22AA63DCE008E480A /* experiments */,
+				199DAD012AA63DCE008E480A /* FAQ.md */,
+				199DACDB2AA63DCE008E480A /* gfpgan */,
+				199DACD72AA63DCE008E480A /* inference_gfpgan.py */,
+				199DACF32AA63DCE008E480A /* inputs */,
+				199DACD52AA63DCE008E480A /* LICENSE */,
+				199DACD02AA63DCE008E480A /* MANIFEST.in */,
+				199DAD032AA63DCE008E480A /* options */,
+				199DACF22AA63DCE008E480A /* PaperModel.md */,
+				199DAD062AA63DCE008E480A /* README_CN.md */,
+				199DACD62AA63DCE008E480A /* README.md */,
+				199DACFD2AA63DCE008E480A /* requirements.txt */,
+				199DACFE2AA63DCE008E480A /* scripts */,
+				199DACD12AA63DCE008E480A /* setup.cfg */,
+				199DAD072AA63DCE008E480A /* setup.py */,
+				199DAD082AA63DCE008E480A /* tests */,
+				199DAD192AA63DCE008E480A /* VERSION */,
+			);
+			sourceTree = "<group>";
+		};
+		199DACD22AA63DCE008E480A /* experiments */ = {
+			isa = PBXGroup;
+			children = (
+				199DACD32AA63DCE008E480A /* pretrained_models */,
+			);
+			name = experiments;
+			path = ../../experiments;
+			sourceTree = "<group>";
+		};
+		199DACD32AA63DCE008E480A /* pretrained_models */ = {
+			isa = PBXGroup;
+			children = (
+				199DACD42AA63DCE008E480A /* README.md */,
+			);
+			path = pretrained_models;
+			sourceTree = "<group>";
+		};
+		199DACDB2AA63DCE008E480A /* gfpgan */ = {
+			isa = PBXGroup;
+			children = (
+				199DACDC2AA63DCE008E480A /* weights */,
+				199DACDE2AA63DCE008E480A /* __init__.py */,
+				199DACDF2AA63DCE008E480A /* models */,
+				199DACE22AA63DCE008E480A /* utils.py */,
+				199DACE32AA63DCE008E480A /* train.py */,
+				199DACE42AA63DCE008E480A /* archs */,
+				199DACED2AA63DCE008E480A /* data */,
+			);
+			name = gfpgan;
+			path = ../../gfpgan;
+			sourceTree = "<group>";
+		};
+		199DACDC2AA63DCE008E480A /* weights */ = {
+			isa = PBXGroup;
+			children = (
+				199DACDD2AA63DCE008E480A /* README.md */,
+			);
+			path = weights;
+			sourceTree = "<group>";
+		};
+		199DACDF2AA63DCE008E480A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				199DACE02AA63DCE008E480A /* gfpgan_model.py */,
+				199DACE12AA63DCE008E480A /* __init__.py */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		199DACE42AA63DCE008E480A /* archs */ = {
+			isa = PBXGroup;
+			children = (
+				199DACE52AA63DCE008E480A /* stylegan2_bilinear_arch.py */,
+				199DACE62AA63DCE008E480A /* arcface_arch.py */,
+				199DACE72AA63DCE008E480A /* stylegan2_clean_arch.py */,
+				199DACE82AA63DCE008E480A /* gfpganv1_arch.py */,
+				199DACE92AA63DCE008E480A /* restoreformer_arch.py */,
+				199DACEA2AA63DCE008E480A /* __init__.py */,
+				199DACEB2AA63DCE008E480A /* gfpganv1_clean_arch.py */,
+				199DACEC2AA63DCE008E480A /* gfpgan_bilinear_arch.py */,
+			);
+			path = archs;
+			sourceTree = "<group>";
+		};
+		199DACED2AA63DCE008E480A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				199DACEE2AA63DCE008E480A /* ffhq_degradation_dataset.py */,
+				199DACEF2AA63DCE008E480A /* __init__.py */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		199DACF02AA63DCE008E480A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				199DACF12AA63DCE008E480A /* gfpgan_logo.png */,
+			);
+			name = assets;
+			path = ../../assets;
+			sourceTree = "<group>";
+		};
+		199DACF32AA63DCE008E480A /* inputs */ = {
+			isa = PBXGroup;
+			children = (
+				199DACF42AA63DCE008E480A /* whole_imgs */,
+				199DACF82AA63DCE008E480A /* cropped_faces */,
+			);
+			name = inputs;
+			path = ../../inputs;
+			sourceTree = "<group>";
+		};
+		199DACF42AA63DCE008E480A /* whole_imgs */ = {
+			isa = PBXGroup;
+			children = (
+				199DACF52AA63DCE008E480A /* Blake_Lively.jpg */,
+				199DACF62AA63DCE008E480A /* 10045.png */,
+				199DACF72AA63DCE008E480A /* 00.jpg */,
+			);
+			path = whole_imgs;
+			sourceTree = "<group>";
+		};
+		199DACF82AA63DCE008E480A /* cropped_faces */ = {
+			isa = PBXGroup;
+			children = (
+				199DACF92AA63DCE008E480A /* Justin_Timberlake_crop.png */,
+				199DACFA2AA63DCE008E480A /* Paris_Hilton_crop.png */,
+				199DACFB2AA63DCE008E480A /* Julia_Roberts_crop.png */,
+				199DACFC2AA63DCE008E480A /* Adele_crop.png */,
+			);
+			path = cropped_faces;
+			sourceTree = "<group>";
+		};
+		199DACFE2AA63DCE008E480A /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				199DACFF2AA63DCE008E480A /* parse_landmark.py */,
+				199DAD002AA63DCE008E480A /* convert_gfpganv_to_clean.py */,
+			);
+			name = scripts;
+			path = ../../scripts;
+			sourceTree = "<group>";
+		};
+		199DAD032AA63DCE008E480A /* options */ = {
+			isa = PBXGroup;
+			children = (
+				199DAD042AA63DCE008E480A /* train_gfpgan_v1.yml */,
+				199DAD052AA63DCE008E480A /* train_gfpgan_v1_simple.yml */,
+			);
+			name = options;
+			path = ../../options;
+			sourceTree = "<group>";
+		};
+		199DAD082AA63DCE008E480A /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				199DAD092AA63DCE008E480A /* test_utils.py */,
+				199DAD0A2AA63DCE008E480A /* test_stylegan2_clean_arch.py */,
+				199DAD0B2AA63DCE008E480A /* test_gfpgan_arch.py */,
+				199DAD0C2AA63DCE008E480A /* test_gfpgan_model.py */,
+				199DAD0D2AA63DCE008E480A /* test_ffhq_degradation_dataset.py */,
+				199DAD0E2AA63DCE008E480A /* data */,
+				199DAD182AA63DCE008E480A /* test_arcface_arch.py */,
+			);
+			name = tests;
+			path = ../../tests;
+			sourceTree = "<group>";
+		};
+		199DAD0E2AA63DCE008E480A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				199DAD0F2AA63DCE008E480A /* test_gfpgan_model.yml */,
+				199DAD102AA63DCE008E480A /* gt */,
+				199DAD122AA63DCE008E480A /* test_eye_mouth_landmarks.pth */,
+				199DAD132AA63DCE008E480A /* ffhq_gt.lmdb */,
+				199DAD172AA63DCE008E480A /* test_ffhq_degradation_dataset.yml */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		199DAD102AA63DCE008E480A /* gt */ = {
+			isa = PBXGroup;
+			children = (
+				199DAD112AA63DCE008E480A /* 00000000.png */,
+			);
+			path = gt;
+			sourceTree = "<group>";
+		};
+		199DAD132AA63DCE008E480A /* ffhq_gt.lmdb */ = {
+			isa = PBXGroup;
+			children = (
+				199DAD142AA63DCE008E480A /* lock.mdb */,
+				199DAD152AA63DCE008E480A /* data.mdb */,
+				199DAD162AA63DCE008E480A /* meta_info.txt */,
+			);
+			path = ffhq_gt.lmdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		199DACCA2AA63DBA008E480A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 199DACCD2AA63DBA008E480A /* Build configuration list for PBXProject "GFPGan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 199DACC92AA63DBA008E480A;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		199DACCE2AA63DBA008E480A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		199DACCF2AA63DBA008E480A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		199DACCD2AA63DBA008E480A /* Build configuration list for PBXProject "GFPGan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				199DACCE2AA63DBA008E480A /* Debug */,
+				199DACCF2AA63DBA008E480A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 199DACCA2AA63DBA008E480A /* Project object */;
+}
