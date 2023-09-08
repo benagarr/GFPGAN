@@ -125,9 +125,9 @@ class GFPGANer():
             cropped_face_t = cropped_face_t.unsqueeze(0).to(self.device)
 
             try:
-                output = self.gfpgan(cropped_face_t, return_rgb=False, weight=weight)[0]
+               # output = self.gfpgan(cropped_face_t, return_rgb=False, weight=weight)[0]
                 
-                check_trace = True
+                check_trace = False
                 
                 print("Tracing")
                 traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
@@ -140,7 +140,7 @@ class GFPGANer():
                               convert_to="mlprogram",
                               compute_precision=ct.precision.FLOAT16,
                               inputs=[ct.ImageType(name="input",
-                                                    shape=upsampler.img.shape,
+                                                    shape=cropped_face_t.shape,
                                                     color_layout=ct.colorlayout.RGB,
                                                     scale=scale)],
                               outputs=[ct.ImageType(name="pred")])
