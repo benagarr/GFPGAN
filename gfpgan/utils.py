@@ -133,7 +133,8 @@ class GFPGANer():
                 traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
                 print("Traced")
                 
-                scale = 1 / 255.0
+            #    scale = 1 / 255.0
+            scale = 1.0
                 
                 print("Start conversion!")
                 model_from_torch = ct.convert(traced_model,
@@ -148,7 +149,7 @@ class GFPGANer():
                 # save without compressing
                 model_from_torch.save('/content/result.mlpackage')
 
-                die()
+                raise(RuntimeError)
                 
                 # convert to image
                 restored_face = tensor2img(output.squeeze(0), rgb2bgr=True, min_max=(-1, 1))
