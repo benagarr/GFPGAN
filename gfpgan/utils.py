@@ -133,8 +133,8 @@ class GFPGANer():
                 traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
                 print("Traced")
                 
-            #    scale = 1 / 255.0
-                scale = 1.0
+                scale = 1 / 255.0
+            #    scale = 1.0
                 
                 print("Start conversion!")
                 model_from_torch = ct.convert(traced_model,
