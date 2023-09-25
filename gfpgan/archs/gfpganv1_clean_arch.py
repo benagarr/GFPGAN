@@ -321,6 +321,7 @@ class GFPGANv1Clean(nn.Module):
                                          input_is_latent=self.input_is_latent,
                                          randomize_noise=randomize_noise)
 
+        print("Returning image!")
         image = torch.mul(image, 255)
 
         return image
