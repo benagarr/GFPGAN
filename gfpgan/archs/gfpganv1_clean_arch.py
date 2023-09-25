@@ -323,5 +323,6 @@ class GFPGANv1Clean(nn.Module):
 
         print("Returning image!")
         image = torch.mul(image, 255)
+        image = torch.add(image, 127.5)
 
         return image

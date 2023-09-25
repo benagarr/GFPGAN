@@ -133,8 +133,10 @@ class GFPGANer():
                 traced_model = torch.jit.trace(self.gfpgan, cropped_face_t, check_trace=check_trace)
                 print("Traced")
                 
-            #    scale = 1 / 255.0
-                scale = 1.0
+#                scale = 1 / 255.0
+                scale = 1 / 127.5
+            #    scale = 1.0
+                bias = [-1,-1,-1]
                 
                 print("Start conversion!")
                 model_from_torch = ct.convert(traced_model,
@@ -143,7 +145,7 @@ class GFPGANer():
                               inputs=[ct.ImageType(name="input",
                                                     shape=cropped_face_t.shape,
                                                     color_layout=ct.colorlayout.RGB,
-                                                    scale=scale)],
+                                                    scale=scale, bias=bias)],
                               outputs=[ct.ImageType(name="pred")])
 
                 # save without compressing
