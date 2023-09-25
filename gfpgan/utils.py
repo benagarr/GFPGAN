@@ -134,7 +134,7 @@ class GFPGANer():
                 print("Traced")
                 
             #    scale = 1 / 255.0
-            scale = 1.0
+                scale = 1.0
                 
                 print("Start conversion!")
                 model_from_torch = ct.convert(traced_model,
