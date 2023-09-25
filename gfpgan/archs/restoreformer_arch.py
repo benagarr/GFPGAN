@@ -656,6 +656,6 @@ class RestoreFormer(nn.Module):
         dec = self.decode(quant, hs)
         
 #        print("Restore former mul!")
-#        dec = torch.mul(dec, 255)
+        dec = torch.mul(dec, 255)
 
         return dec
