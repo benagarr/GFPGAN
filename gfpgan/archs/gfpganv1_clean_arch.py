@@ -322,7 +322,7 @@ class GFPGANv1Clean(nn.Module):
                                          randomize_noise=randomize_noise)
 
         print("Returning image!")
-        image = torch.mul(image, 255)
+        image = torch.mul(image, 127.5)
         image = torch.add(image, 127.5)
 
         return image
