@@ -129,8 +129,8 @@ class StyleConv(nn.Module):
         # noise injection
         if noise is None:
             b, _, h, w = out.shape
-            noise = out.new_empty(b, 1, h, w).normal_()
-#            noise = torch.randn_like(out.new_empty(b, 1, h, w))
+#            noise = out.new_empty(b, 1, h, w).normal_()
+            noise = torch.randn_like(out.new_empty(b, 1, h, w))
         out = out + self.weight * noise
         # add bias
         out = out + self.bias
