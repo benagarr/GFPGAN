@@ -115,6 +115,8 @@ def main():
         # download pre-trained models from url
         model_path = url
 
+    arch = 'bilinear'
+
     restorer = GFPGANer(
         model_path=model_path,
         upscale=args.upscale,

@@ -323,6 +323,5 @@ class GFPGANv1Clean(nn.Module):
 
         print("Returning image!")
         image = torch.mul(image, 255)
-        print(image)
 
         return image
